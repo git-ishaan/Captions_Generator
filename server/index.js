@@ -17,6 +17,13 @@ app.post("/api/video", async (req, res) => {
   res.status(201).json({ message: "Video data saved successfully" });
 });
 
+
+// Test API
+app.get("/api/test", (req, res) => {
+  res.status(200).json({ message: "Server is running" });
+});
+
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
